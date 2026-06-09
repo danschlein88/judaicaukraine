@@ -15,7 +15,7 @@
     .btn {
         display: flex !important;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-around !important;
         align-items: center;
 
 
