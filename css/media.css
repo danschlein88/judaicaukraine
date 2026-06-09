@@ -57,6 +57,9 @@
     .categorie__box-link {
         width: 100%;
     }
+    .user-list {
+        width:80px;
+    }
     #user-id {
         z-index: 9996;
     }
