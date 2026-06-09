@@ -18,8 +18,8 @@
 }
 
 :root {
-    /*--swiper-theme-color: #FFFFFF*/
-    --swiper-theme-color: #FFFFFF
+    /*--swiper-theme-color: #007aff*/
+    --swiper-theme-color: #FFFFFF;
 }
 
 .swiper, swiper-container {
