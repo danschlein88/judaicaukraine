@@ -5,6 +5,9 @@
     .container {
         padding: 0 15px;
     }
+    .menu__box {
+    margin-right: 0px;
+    }
 
     .search__box {
         display: none;
