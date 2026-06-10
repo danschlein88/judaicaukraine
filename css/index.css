@@ -1,413 +1,538 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Judaica Ukraine</title>
-
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/font.css">
-
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/media.css">
-    <script src="js/jquery.js"></script>
-    <link rel="stylesheet" href="css/swiper.css"/>
-
-    <script src="js/swiper.js"></script>
-</head>
-<body class="body">
-<header class="header">
-    <div class="container">
-        <div class="header__inner">
-            <div class="header__inner-left">
-
-                <a href="#" class="logo__link">
-                    <svg width="215" height="31" viewBox="0 0 215 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M24.7579 0V19.6733C24.7579 21.8007 24.2446 23.6801 23.218 25.3159C22.1913 26.9474 20.7488 28.2308 18.8946 29.1575C17.0405 30.0885 14.8678 30.5497 12.3764 30.5497C11.4383 30.5497 10.5444 30.4844 9.69922 30.3539C9.72134 30.3452 9.73904 30.3321 9.76117 30.3234C11.8277 29.288 13.4606 27.8349 14.6111 25.999C14.7262 25.8162 14.8324 25.6335 14.9297 25.4465C15.3413 25.3203 15.7307 25.1593 16.0935 24.9635C17.1334 24.398 17.9388 23.6192 18.5141 22.6316C19.0893 21.6441 19.377 20.5086 19.377 19.2295V0H24.7579Z"
-                              fill="#00264B"/>
-                        <path d="M6.61999 23.2016C6.35006 23.4321 6.05357 23.6366 5.71726 23.8193C4.88091 24.2718 3.84543 24.5024 2.6418 24.5024C2.05326 24.5024 1.50897 24.4458 1.00008 24.3371C0.331884 22.9405 0 21.3874 0 19.6733V0H5.38095V19.2295C5.38095 20.5086 5.66859 21.6441 6.23943 22.6316C6.35448 22.8318 6.47838 23.0188 6.61999 23.2016Z"
-                              fill="#00264B"/>
-                        <path d="M15.0218 0V19.6733C15.0218 21.8007 14.5085 23.6801 13.4818 25.3159C13.3845 25.4726 13.2827 25.6248 13.1765 25.7727C12.1764 27.1867 10.8356 28.3178 9.15848 29.1575C8.63632 29.4185 8.0876 29.6448 7.51234 29.8318C6.93707 29.6448 6.38835 29.4185 5.86176 29.1575C4.18464 28.3178 2.84383 27.1867 1.84375 25.7727C2.10041 25.7989 2.36591 25.8076 2.64027 25.8076C4.07844 25.8076 5.31747 25.5248 6.35738 24.9635C6.78219 24.733 7.16718 24.4676 7.51234 24.163C8.0168 23.728 8.43719 23.2146 8.77792 22.6316C9.35319 21.6441 9.64082 20.5086 9.64082 19.2295V0H15.0218Z"
-                              fill="#00264B"/>
-                        <path d="M46.5589 3.36364H48.3089V11.6136C48.3089 12.3598 48.1612 12.9981 47.8658 13.5284C47.5741 14.0587 47.1631 14.464 46.6328 14.7443C46.1025 15.0208 45.4813 15.1591 44.7692 15.1591C44.1139 15.1591 43.5249 15.0398 43.0021 14.8011C42.4832 14.5625 42.0722 14.2159 41.7692 13.7614C41.4699 13.303 41.3203 12.7462 41.3203 12.0909H43.0646C43.0646 12.4129 43.1385 12.6913 43.2862 12.9261C43.4377 13.161 43.6442 13.3447 43.9055 13.4773C44.1707 13.6061 44.4737 13.6705 44.8146 13.6705C45.1858 13.6705 45.5002 13.5928 45.7578 13.4375C46.0192 13.2784 46.218 13.0455 46.3544 12.7386C46.4908 12.4318 46.5589 12.0568 46.5589 11.6136V3.36364ZM60.4273 3.36364H62.1887V11.017C62.1887 11.8314 61.9974 12.553 61.6148 13.1818C61.2322 13.8068 60.6943 14.2992 60.0012 14.6591C59.308 15.0152 58.4955 15.1932 57.5637 15.1932C56.6356 15.1932 55.825 15.0152 55.1318 14.6591C54.4387 14.2992 53.9008 13.8068 53.5182 13.1818C53.1356 12.553 52.9443 11.8314 52.9443 11.017V3.36364H54.7V10.875C54.7 11.4015 54.8156 11.8693 55.0466 12.2784C55.2815 12.6875 55.6129 13.0095 56.0409 13.2443C56.469 13.4754 56.9765 13.5909 57.5637 13.5909C58.1546 13.5909 58.664 13.4754 59.0921 13.2443C59.5239 13.0095 59.8534 12.6875 60.0807 12.2784C60.3118 11.8693 60.4273 11.4015 60.4273 10.875V3.36364ZM70.5883 15H66.8212V3.36364H70.7076C71.8477 3.36364 72.8269 3.59659 73.6451 4.0625C74.4633 4.52462 75.0902 5.18939 75.5258 6.05682C75.9652 6.92045 76.1849 7.95644 76.1849 9.16477C76.1849 10.3769 75.9633 11.4186 75.5201 12.2898C75.0807 13.161 74.4443 13.8314 73.611 14.3011C72.7777 14.767 71.7701 15 70.5883 15ZM68.5769 13.4659H70.4917C71.378 13.4659 72.1148 13.2992 72.7019 12.9659C73.289 12.6288 73.7284 12.142 74.0201 11.5057C74.3118 10.8655 74.4576 10.0852 74.4576 9.16477C74.4576 8.25189 74.3118 7.47727 74.0201 6.84091C73.7322 6.20455 73.3023 5.72159 72.7303 5.39205C72.1583 5.0625 71.4481 4.89773 70.5996 4.89773H68.5769V13.4659ZM80.8529 15H78.9893L83.1768 3.36364H85.2052L89.3927 15H87.5291L84.2393 5.47727H84.1484L80.8529 15ZM81.1654 10.4432H87.2109V11.9205H81.1654V10.4432ZM94.9088 3.36364V15H93.1531V3.36364H94.9088ZM109.21 7.14773H107.438C107.369 6.76894 107.243 6.43561 107.057 6.14773C106.871 5.85985 106.644 5.61553 106.375 5.41477C106.106 5.21401 105.805 5.0625 105.472 4.96023C105.142 4.85795 104.792 4.80682 104.421 4.80682C103.75 4.80682 103.15 4.97538 102.619 5.3125C102.093 5.64962 101.676 6.14394 101.369 6.79545C101.066 7.44697 100.915 8.24242 100.915 9.18182C100.915 10.1288 101.066 10.928 101.369 11.5795C101.676 12.2311 102.095 12.7235 102.625 13.0568C103.155 13.3902 103.752 13.5568 104.415 13.5568C104.782 13.5568 105.131 13.5076 105.46 13.4091C105.794 13.3068 106.095 13.1572 106.364 12.9602C106.633 12.7633 106.86 12.5227 107.046 12.2386C107.235 11.9508 107.366 11.6212 107.438 11.25L109.21 11.2557C109.116 11.8277 108.932 12.3542 108.659 12.8352C108.39 13.3125 108.044 13.7254 107.619 14.0739C107.199 14.4186 106.718 14.6856 106.176 14.875C105.635 15.0644 105.044 15.1591 104.404 15.1591C103.396 15.1591 102.498 14.9205 101.71 14.4432C100.922 13.9621 100.301 13.2746 99.8467 12.3807C99.396 11.4867 99.1706 10.4205 99.1706 9.18182C99.1706 7.93939 99.3979 6.87311 99.8524 5.98295C100.307 5.08901 100.928 4.40341 101.716 3.92614C102.504 3.44508 103.4 3.20455 104.404 3.20455C105.021 3.20455 105.597 3.29356 106.131 3.47159C106.669 3.64583 107.152 3.90341 107.58 4.24432C108.008 4.58144 108.362 4.99432 108.642 5.48295C108.922 5.9678 109.112 6.52273 109.21 7.14773ZM114.296 15H112.432L116.62 3.36364H118.648L122.836 15H120.972L117.682 5.47727H117.592L114.296 15ZM114.609 10.4432H120.654V11.9205H114.609V10.4432ZM140.394 3.36364H142.155V11.017C142.155 11.8314 141.964 12.553 141.581 13.1818C141.198 13.8068 140.661 14.2992 139.967 14.6591C139.274 15.0152 138.462 15.1932 137.53 15.1932C136.602 15.1932 135.791 15.0152 135.098 14.6591C134.405 14.2992 133.867 13.8068 133.484 13.1818C133.102 12.553 132.911 11.8314 132.911 11.017V3.36364H134.666V10.875C134.666 11.4015 134.782 11.8693 135.013 12.2784C135.248 12.6875 135.579 13.0095 136.007 13.2443C136.435 13.4754 136.943 13.5909 137.53 13.5909C138.121 13.5909 138.63 13.4754 139.058 13.2443C139.49 13.0095 139.82 12.6875 140.047 12.2784C140.278 11.8693 140.394 11.4015 140.394 10.875V3.36364ZM146.787 15V3.36364H148.543V8.92045H148.685L153.566 3.36364H155.776L151.083 8.60227L155.793 15H153.68L149.918 9.80114L148.543 11.3807V15H146.787ZM159.492 15V3.36364H163.64C164.542 3.36364 165.29 3.51894 165.885 3.82955C166.483 4.14015 166.93 4.57008 167.225 5.11932C167.521 5.66477 167.669 6.29545 167.669 7.01136C167.669 7.72348 167.519 8.35038 167.22 8.89205C166.924 9.42992 166.477 9.84848 165.879 10.1477C165.284 10.447 164.536 10.5966 163.635 10.5966H160.492V9.08523H163.475C164.044 9.08523 164.506 9.00379 164.862 8.84091C165.222 8.67803 165.485 8.44129 165.652 8.13068C165.818 7.82008 165.902 7.44697 165.902 7.01136C165.902 6.57197 165.816 6.19129 165.646 5.86932C165.479 5.54735 165.216 5.30114 164.856 5.13068C164.5 4.95644 164.032 4.86932 163.453 4.86932H161.248V15H159.492ZM165.237 9.75L168.112 15H166.112L163.294 9.75H165.237ZM172.868 15H171.004L175.192 3.36364H177.22L181.408 15H179.544L176.254 5.47727H176.163L172.868 15ZM173.18 10.4432H179.226V11.9205H173.18V10.4432ZM186.924 3.36364V15H185.168V3.36364H186.924ZM200.953 3.36364V15H199.339L193.424 6.46591H193.316V15H191.561V3.36364H193.186L199.106 11.9091H199.214V3.36364H200.953ZM205.594 15V3.36364H212.889V4.875H207.349V8.42045H212.508V9.92614H207.349V13.4886H212.957V15H205.594Z"
-                              fill="#00264B"/>
-                        <path d="M192.812 19.7102C192.782 19.4413 192.657 19.233 192.438 19.0852C192.218 18.9356 191.941 18.8608 191.608 18.8608C191.369 18.8608 191.163 18.8987 190.989 18.9744C190.814 19.0483 190.679 19.1506 190.582 19.2812C190.488 19.41 190.44 19.5568 190.44 19.7216C190.44 19.8598 190.473 19.9792 190.537 20.0795C190.603 20.1799 190.689 20.2642 190.795 20.3324C190.903 20.3987 191.019 20.4545 191.142 20.5C191.265 20.5436 191.384 20.5795 191.497 20.608L192.065 20.7557C192.251 20.8011 192.441 20.8627 192.636 20.9403C192.831 21.018 193.012 21.1203 193.179 21.2472C193.346 21.3741 193.48 21.5312 193.582 21.7188C193.687 21.9062 193.739 22.1307 193.739 22.392C193.739 22.7216 193.653 23.0142 193.483 23.2699C193.314 23.5256 193.069 23.7273 192.747 23.875C192.427 24.0227 192.04 24.0966 191.585 24.0966C191.15 24.0966 190.773 24.0275 190.455 23.8892C190.136 23.7509 189.887 23.5549 189.707 23.3011C189.527 23.0455 189.428 22.7424 189.409 22.392H190.29C190.307 22.6023 190.375 22.7775 190.494 22.9176C190.616 23.0559 190.77 23.1591 190.957 23.2273C191.147 23.2936 191.354 23.3267 191.58 23.3267C191.828 23.3267 192.048 23.2879 192.241 23.2102C192.437 23.1307 192.59 23.0208 192.702 22.8807C192.813 22.7386 192.869 22.5729 192.869 22.3835C192.869 22.2112 192.82 22.0701 192.722 21.9602C192.625 21.8504 192.493 21.7595 192.327 21.6875C192.162 21.6155 191.975 21.5521 191.767 21.4972L191.08 21.3097C190.614 21.1828 190.244 20.9962 189.972 20.75C189.701 20.5038 189.565 20.178 189.565 19.7727C189.565 19.4375 189.656 19.1449 189.838 18.8949C190.02 18.6449 190.266 18.4508 190.577 18.3125C190.887 18.1723 191.238 18.1023 191.628 18.1023C192.022 18.1023 192.369 18.1714 192.67 18.3097C192.973 18.4479 193.212 18.6383 193.386 18.8807C193.561 19.1212 193.652 19.3977 193.659 19.7102H192.812ZM195.828 24V18.1818H196.705V20.7102H199.606V18.1818H200.487V24H199.606V21.4631H196.705V24H195.828ZM207.859 21.0909C207.859 21.7121 207.745 22.2462 207.518 22.6932C207.291 23.1383 206.979 23.4811 206.584 23.7216C206.19 23.9602 205.742 24.0795 205.24 24.0795C204.736 24.0795 204.286 23.9602 203.89 23.7216C203.496 23.4811 203.186 23.1373 202.959 22.6903C202.731 22.2434 202.618 21.7102 202.618 21.0909C202.618 20.4697 202.731 19.9366 202.959 19.4915C203.186 19.0445 203.496 18.7017 203.89 18.4631C204.286 18.2225 204.736 18.1023 205.24 18.1023C205.742 18.1023 206.19 18.2225 206.584 18.4631C206.979 18.7017 207.291 19.0445 207.518 19.4915C207.745 19.9366 207.859 20.4697 207.859 21.0909ZM206.99 21.0909C206.99 20.6174 206.913 20.2187 206.76 19.8949C206.608 19.5691 206.4 19.3229 206.135 19.1562C205.871 18.9877 205.573 18.9034 205.24 18.9034C204.905 18.9034 204.605 18.9877 204.342 19.1562C204.079 19.3229 203.87 19.5691 203.717 19.8949C203.566 20.2187 203.49 20.6174 203.49 21.0909C203.49 21.5644 203.566 21.964 203.717 22.2898C203.87 22.6136 204.079 22.8598 204.342 23.0284C204.605 23.1951 204.905 23.2784 205.24 23.2784C205.573 23.2784 205.871 23.1951 206.135 23.0284C206.4 22.8598 206.608 22.6136 206.76 22.2898C206.913 21.964 206.99 21.5644 206.99 21.0909ZM209.994 24V18.1818H212.067C212.52 18.1818 212.895 18.2642 213.192 18.429C213.49 18.5937 213.712 18.8191 213.86 19.1051C214.008 19.3892 214.082 19.7093 214.082 20.0653C214.082 20.4233 214.007 20.7453 213.857 21.0312C213.709 21.3153 213.486 21.5407 213.187 21.7074C212.889 21.8722 212.515 21.9545 212.065 21.9545H210.638V21.2102H211.985C212.271 21.2102 212.503 21.161 212.681 21.0625C212.859 20.9621 212.99 20.8258 213.073 20.6534C213.156 20.4811 213.198 20.285 213.198 20.0653C213.198 19.8456 213.156 19.6506 213.073 19.4801C212.99 19.3097 212.858 19.1761 212.678 19.0795C212.5 18.983 212.265 18.9347 211.974 18.9347H210.871V24H209.994Z"
-                              fill="#00264B"/>
-                    </svg>
-                </a>
-                <div class="search__box">
-                    <div class="input__box">
-                        <input placeholder="Я шукаю..." class="input__field">
-                    </div>
-                    <a href="#" class="input__button">Знайти</a>
-                </div>
-            </div>
-            <div class="header__inner-right">
-                <div class="menu__box">
-                    <nav class="menu">
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a class="menu__link">Головна</a>
-                            </li>
-                        </ul>
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a class="menu__link">Блог</a>
-                            </li>
-                        </ul>
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a class="menu__link">Контакти</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <ul class="user-list">
-                    <li class="user-list__item" id="user-id">
-                        <a href="/account" class="user-list__link">
-                            <img src="/images/person.svg" alt="Account" class="user-list__image">
-                        </a>
-                        <div class="account-popup">
-                            <div class="account-popup__inner">
-
-                                <!-- Если пользователь НЕ вошёл -->
-                                <p class="account-popup__title">Ласкаво просимо!</p>
-                                <p class="account-popup__text">Увійдіть у аккаунт або створіть його.</p>
-
-                                <a href="/login.php" class="account-popup__btn account-popup__btn_main">
-                                   Увійти
-                                </a>
-
-                                <a href="/register" class="account-popup__btn account-popup__btn_second">
-                                    Створити аккаунт
-                                </a>
-
-                                <!-- Если пользователь вошёл, можешь выводить другой вариант -->
-                                <!--
-                                <p class="account-popup__title">Здравствуйте, Иван!</p>
-
-                                <a href="/account" class="account-popup__btn account-popup__btn_main">
-                                  Личный кабинет
-                                </a>
-
-                                <a href="/logout" class="account-popup__btn account-popup__btn_second">
-                                  Выйти
-                                </a>
-                                -->
-
-                            </div>
-                        </div>
-                    </li>
-                    <li class="user-list__item">
-                        <a href="#" class="user-list__link">
-                            <img src="/images/list.svg" alt="Orders list" class="user-list__image">
-                        </a>
-                    </li>
-                    <li class="user-list__item">
-                        <a href="#" class="user-list__link basket">
-                            <img src="/images/cart.svg" alt="Basket" class="user-list__image">
-                            <p class="basket__num">1</p>
-                        </a>
-                    </li>
-                </ul>
-                <button class="btn" id="menu__link-btn">
-
-                    <div class="btn__line"></div>
-                    <div class="btn__line"></div>
-                    <div class="btn__line"></div>
-                </button>
-            </div>
-        </div>
-    </div>
-</header>
-<section class="search-mobile__block">
-    <div class="container">
-        <div class="search-mobile__inner">
-            <div class="search-mobile__box">
-                <div class="search-mobile-input__box">
-                    <input class="search-mobile__input">
-                </div>
-                <a href="/" class="serach-mobile__button">Знайти</a>
-            </div>
-        </div>
-    </div>
-</section>
-<div class="banner-categories">
-    <div class="container">
-        <div class="banner-categories__inner">
-            <div class="categories__block">
-                <a href="/" class="categorie__box-link">
-                    <p class="categorie__desc">Книги та священні тексти</p>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="categorie__arrov" d="M13.2 12L8.6 7.4L10 6L16 12L10 18L8.6 16.6L13.2 12Z" fill="#1D1B20"/>
-                    </svg>
-                </a>
-                <a href="/" class="categorie__box-link">
-                    <p class="categorie__desc">Релігійна атрибутика</p>
-
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="categorie__arrov" d="M13.2 12L8.6 7.4L10 6L16 12L10 18L8.6 16.6L13.2 12Z" fill="#1D1B20"/>
-                    </svg>
-                </a>
-                <a href="/" class="categorie__box-link">
-                    <p class="categorie__desc">Сувеніри та символіка</p>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="categorie__arrov" d="M13.2 12L8.6 7.4L10 6L16 12L10 18L8.6 16.6L13.2 12Z" fill="#1D1B20"/>
-                    </svg>
-                </a>
-                <a href="/" class="categorie__box-link">
-                    <p class="categorie__desc">Предмети для обрядів та свят</p>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="categorie__arrov" d="M13.2 12L8.6 7.4L10 6L16 12L10 18L8.6 16.6L13.2 12Z" fill="#1D1B20"/>
-                    </svg>
-                </a>
-                <a href="/" class="categorie__box-link">
-                    <p class="categorie__desc">Усі товари</p>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="categorie__arrov" d="M13.2 12L8.6 7.4L10 6L16 12L10 18L8.6 16.6L13.2 12Z" fill="#1D1B20"/>
-                    </svg>
-                </a>
-            </div>
-            <div class="banner__block">
-                <div class="swiper">
-
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide">
-                            <picture class="pic">
-                                <source srcset="images/mobile.jpg" media="(max-width:768px)">
-                                <img class="slide" src="images/main.jpg" alt="">
-                            </picture>
-                            <a class="advertlink" href="https://www.google.com/"></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <picture class="pic">
-                                <source srcset="images/mobile.jpg" media="(max-width:768px)">
-                                <img class="slide" src="images/main.jpg" alt="">
-                            </picture>
-                            <a class="advertlink" href="https://www.google.com/"></a></div>
-                        <div class="swiper-slide">
-                            <picture class="pic">
-                                <source srcset="images/mobile.jpg" media="(max-width:768px)">
-                                <img class="slide" src="images/main.jpg" alt="">
-                            </picture>
-                            <a class="advertlink" href="https://www.google.com/"></a></div>
-
-                    </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-
-                    <!-- If we need scrollbar -->
-                    <!-- <div class="swiper-scrollbar"></div> -->
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+html.no-scroll,
+body.no-scroll {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+}
 
 
+.container {
+
+
+    max-width: 1060px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.header__inner {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__inner-left {
+    display: flex;
+}
+
+.search__box {
+    display: flex;
+    margin-left: 55px;
+}
+.search-mobile__block {
+    display: none;
+}
+
+.input__box {
+    border-radius: 4px;
+    border: 1px solid #E5E5E5;
+    height: 28px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input__button {
+    background-color: #00264B;
+    color: #FFFFFF;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 28px;
+    width: 70px;
+    border-radius: 0px 4px 4px 0px;
+    font-size: 12px;
+    font-family: 'Onest Regular', sans-serif;
+    font-weight: 400;
+}
+.menu {
+    display: flex;
+}
+
+.header__inner-right {
+    display: flex;
+    align-items: center;
+}
+.user-list {
+    display: flex;
+    width: 116px;
+    justify-content: space-between;
+    margin-right: 22px;
+}
+.basket {
+    position: relative;
+}
+.basket__num {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF7676;
+    color: #FFFFFF;
+    border-radius: 100px;
+    bottom: 12px;
+    right: -8px;
+}
+.menu__box {
+    margin-right: 44px;
+}
+.menu__list{
+    margin-left: 48px;
+}
+.menu__link {
+    color: #505050;
+    font-size: 16px;
+    font-family: 'Onest Regular', sans-serif;
+    font-weight: 400;
+}
+.categorie__box-link {
+    display: flex;
+}
+.categorie__box-link {
+    width: 250px;
+    height: 50px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s;
+}
+.categorie__arrov {
+    fill: #00264b;
+}
+
+.categorie__box-link:hover {
+    background-color: #00264b;
+    transition: all 0.3s;
+}
+.categorie__box-link:hover .categorie__arrov{
+    fill: #FFFFFF;
+}
+.categorie__box-link:hover .categorie__desc {
+    color: #FFFFFF;
+    transition: all 0.3s;
+}
+
+.categorie__desc {
+    color: #00264B;
+    font-size: 14px;
+    font-family: 'Onest Regular', sans-serif;
+    font-weight: 400;
+
+    transition: all 0.3s;
+}
+.banner-categories__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.swiper {
+    width: 790px;
+    height: 237px;
+    border-radius: 10px;
+}
+.pic {
+    display: block;
+    height: 100%;
+}
+
+.btn {
+    display: none;
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    border: none;
+}
+.btn__line {
+    height: 4px;
+    width: 30px;
+    background-color: #00264B;
+    border-radius: 200px;
+}
+.account__overlay {
+    display: none;
+}
+
+.best-offer {
+
+}
+.best-offers__inner {
+
+}
+
+.best-offers-title__box {
+
+}
+
+.best-offers__title {
+    color: #00264B;
+    font-size: 20px;
+    font-family: 'Onest Bold', sans-serif;
+    font-weight: 700;
+    padding: 36px 0px 24px 0px;
+}
+
+.best-offers__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+    gap: 20px;
+}
+
+.product__card {
+    width: 100%;
+    min-width: 0;
+    aspect-ratio: 250 / 320;
+
+    display: grid;
+    grid-template-rows: 170fr 110fr;
+
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.card-image__block {
+    width: 100%;
+    overflow: hidden;
+}
+.card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 12px 12px 0px 0px;
+}
+.card__info {
+    width: 100%;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid #EFEFEF ;
+    border-left: 1px solid #EFEFEF;
+    border-bottom: 1px solid #EFEFEF;
+    border-radius: 0px 0px 12px 12px;
+    padding: 16px 16px 16px 16px;
+}
 
 
 
 
-<section class="best-offers">
-    <div class="container">
-        <div class="best-offers__inner">
-            <div class="best-offers-title__box">
-                <p class="best-offers__title">Найкращі пропозиції для вас</p>
-            </div>
-            <div class="best-offers__content">
-                <div class="product__card">
-                    <div class="card-image__block">
-                        <img src="images/product_1.jpg" alt="" class="card__image">
-                    </div>
-                    <div class="card__info">
-                        <div class="delivery-desc__block">
-                            <div class="delivery__block">
-                                <img src="images/Truck.svg" alt="" class="delivery__icon">
-                                <p class="delivery__title">Доставка 1-2 дні</p>
-                            </div>
-                            <div class="product__title">
-                                <span class="product__title-text">Сувенір "Саксофоніст", полімер, тканинні ніжки</span>
-                            </div>
-                        </div>
-                        <div class="price-btn__block">
-                            <div class="price__block">
-                                <del class="price__discount">1 000 ₴</del>
-                                <p class="price__original">800 ₴</p>
-                            </div>
-                            <a href="/" class="product__button product__button_active">
-                                <img src="images/Trash.svg" alt="" class="product-btn__icon">
-                                <span class="product-btn__title product-btn__title_active">У кошику</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product__card">
-                    <div class="card-image__block">
-                        <img src="images/product_2.jpg" alt="" class="card__image">
-                    </div>
-                    <div class="card__info">
-                        <div class="delivery-desc__block">
-                            <div class="delivery__block">
-                                <img src="images/Truck.svg" alt="" class="delivery__icon">
-                                <p class="delivery__title">Доставка 1-2 дні</p>
-                            </div>
-                            <div class="product__title">
-                                <span class="product__title-text">Тора, укр. мова</span>
-                            </div>
-                        </div>
-                        <div class="price-btn__block">
-                            <div class="price__block">
-                                <del class="price__discount"></del>
-                                <p class="price__original">500 ₴</p>
-                            </div>
-                            <a href="/" class="product__button">
-                                <img src="images/Shcart.svg" alt="" class="product-btn__icon">
-                                <span class="product-btn__title">Купити</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product__card">
-                    <div class="card-image__block">
-                        <img src="images/product_1.jpg" alt="" class="card__image">
-                    </div>
-                    <div class="card__info">
-                        <div class="delivery-desc__block">
-                            <div class="delivery__block">
-                                <img src="images/Truck.svg" alt="" class="delivery__icon">
-                                <p class="delivery__title">Доставка 1-2 дні</p>
-                            </div>
-                            <div class="product__title">
-                                <span class="product__title-text">Сувенір "Саксофоніст", полімер, тканинні ніжки</span>
-                            </div>
-                        </div>
-                        <div class="price-btn__block">
-                            <div class="price__block">
-                                <del class="price__discount">1 000 ₴</del>
-                                <p class="price__original">800 ₴</p>
-                            </div>
-                            <a href="/" class="product__button">
-                                <img src="images/Shcart.svg" alt="" class="product-btn__icon">
-                                <span class="product-btn__title">Купити</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product__card">
-                    <div class="card-image__block">
-                        <img src="images/product_1.jpg" alt="" class="card__image">
-                    </div>
-                    <div class="card__info">
-                        <div class="delivery-desc__block">
-                            <div class="delivery__block">
-                                <img src="images/Truck.svg" alt="" class="delivery__icon">
-                                <p class="delivery__title">Доставка 1-2 дні</p>
-                            </div>
-                            <div class="product__title">
-                                <span class="product__title-text">Сувенір "Саксофоніст", полімер, тканинні ніжки</span>
-                            </div>
-                        </div>
-                        <div class="price-btn__block">
-                            <div class="price__block">
-                                <del class="price__discount">1 000 ₴</del>
-                                <p class="price__original">800 ₴</p>
-                            </div>
-                            <a href="/" class="product__button">
-                                <img src="images/Shcart.svg" alt="" class="product-btn__icon">
-                                <span class="product-btn__title">Купити</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product__card">
-                    <div class="card-image__block">
-                        <img src="images/product_1.jpg" alt="" class="card__image">
-                    </div>
-                    <div class="card__info">
-                        <div class="delivery-desc__block">
-                            <div class="delivery__block">
-                                <img src="images/Truck.svg" alt="" class="delivery__icon">
-                                <p class="delivery__title">Доставка 1-2 дні</p>
-                            </div>
-                            <div class="product__title">
-                                <span class="product__title-text">Сувенір "Саксофоніст", полімер, тканинні ніжки</span>
-                            </div>
-                        </div>
-                        <div class="price-btn__block">
-                            <div class="price__block">
-                                <del class="price__discount">1 000 ₴</del>
-                                <p class="price__original">800 ₴</p>
-                            </div>
-                            <a href="/" class="product__button">
-                                <img src="images/Shcart.svg" alt="" class="product-btn__icon">
-                                <span class="product-btn__title">Купити</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="footer">
-    <div class="container">
-        <div class="footer__inner">
-            <div class="email-block"></div>
-            <div class="legal-info__block">
-                <div class="left-legal__block">
-                    <div class="logo-desc__block">
-                        <img src="images/logo_white.svg" alt="" class="logo__footer">
-                        <p class="desc__footer">C 2026 JUDAICA UKRAINE Shop All Rights Reserved</p>
-                    </div>
-                    <div class="legal-info__inner">
-                        <p class="legal__title">INFORMATION</p>
-                        <div class="legal-items__block">
-                            <div class="legal__link">About us</div>
-                            <div class="legal__link">Delivery</div>
-                            <div class="legal__link">Return Policy</div>
-                            <div class="legal__link">Offers</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="right-legal__block">
-                    <div class="contacts__block">
-                        <p class="contacts__title">CONTACTS</p>
-                        <div class="contacts__items">
-                            <div class="contact__link">+38 (063) 542 17 07</div>
-                            <div class="contact__link">info@judaicaukraine.com</div>
-                            <div class="contact__link">Avenue Volodymyra Ivasyuka, 45A, Kyiv, 04600</div>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<div class="account__overlay"></div>
-<div class="account__block">
-    <p class="account-popup__title">Ласкаво просимо!</p>
-    <p class="account-popup__text">Увійдіть у аккаунт або створіть його.</p>
 
-    <a href="/login.php" class="account-popup__btn account-popup__btn_main">
-        Увійти
-    </a>
 
-    <a href="/register" class="account-popup__btn account-popup__btn_second">
-        Створити аккаунт
-    </a>
-</div>
-<script src="js/menu.js"></script>
-<script src="js/acc.js"></script>
-<script src="js/slider.js"></script>
-</body>
-</html>
+
+.delivery-desc__block {
+    width: 100%;
+}
+
+.delivery__block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.delivery__icon {
+
+}
+
+.delivery__title {
+    color: #24B535;
+    font-size: 12px;
+    font-family: 'Onest Regular', sans-serif;
+    font-weight: 400;
+    margin-left: 4px;
+}
+
+.product__title {
+    display: flex;
+    align-items: center;
+
+
+    width: 100%;
+    height: 20px;
+    margin-top: 0px;
+}
+.product__title-text {
+    color: #00264B;
+    font-size: 16px;
+    font-family: 'Onest Medium', sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.price-btn__block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price__block {
+
+}
+
+.price__discount {
+    color: #00264B;
+    font-size: 12px;
+    font-family: 'Onest Regular', sans-serif;
+    font-weight: 400;
+}
+
+.price__original {
+    color: #00264B;
+    font-size: 16px;
+    font-family: 'Onest Bold', sans-serif;
+    font-weight: 700;
+}
+
+.product__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: #FFFFFF;
+    width: 95px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid #00264B;
+}
+
+.product__button_active {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: #00264B;
+    width: 95px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+
+.product-btn__icon {
+    width: 14px;
+    height: 14px;
+}
+
+.product-btn__title {
+    color: #00264B;
+    font-size: 12px;
+    font-family: 'Onest Regular', sans-serif;
+    font-weight: 400;
+}
+
+.product-btn__title_active {
+    color: #FFFFFF;
+    font-size: 12px;
+    font-family: 'Onest Regular', sans-serif;
+    font-weight: 400;
+}
+
+
+
+.user-list__item {
+    position: relative;
+}
+
+.account-popup {
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+
+    width: 260px;
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0, 38, 75, 0.18);
+
+    z-index: 10000;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transform: translateY(10px);
+    transition: 0.2s ease;
+}
+
+.account-popup_active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.account-popup__inner {
+    padding: 16px;
+}
+
+.account-popup__title {
+    margin: 0 0 6px;
+    font-size: 16px;
+    color: #00264b;
+    font-family: 'Onest Bold', sans-serif;
+    font-weight: 700;
+}
+
+.account-popup__text {
+    margin: 0 0 14px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #444;
+    font-family: 'Onest Regular', sans-serif;
+    font-weight: 400;
+}
+
+.account-popup__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 40px;
+
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.account-popup__btn + .account-popup__btn {
+    margin-top: 8px;
+}
+
+.account-popup__btn_main {
+    background-color: #00264b;
+    color: #ffffff;
+    font-size: 12px;
+    font-family: 'Onest Medium', sans-serif;
+    font-weight: 500;
+}
+
+.account-popup__btn_second {
+    background-color: #f2f5f8;
+    color: #00264b;
+    font-size: 12px;
+    font-family: 'Onest Medium', sans-serif;
+    font-weight: 500;
+}
+
+.footer {
+    background-color: #00264b;
+    padding: 100px 0;
+    margin-top: 50px;
+}
+
+.footer__inner {
+    position: relative;
+}
+
+.email-block {
+
+}
+
+.legal-info__block {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-legal__block {
+    display: flex;
+
+}
+
+.logo-desc__block {
+
+
+}
+
+.logo__footer {
+
+}
+
+.desc__footer {
+    color: #FFFFFF;
+    width: 160px;
+    margin-top: 0px;
+    font-size: 10px;
+    font-family: 'Onest Regular', sans-serif;
+    font-weight: 400;
+}
+
+.legal-info__inner {
+    margin-left: 56px;
+}
+
+.legal__title {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: 'Onest Medium', sans-serif;
+    font-weight: 500;
+}
+
+.legal-items__block {
+    margin-top: 8px;
+}
+
+.legal__link {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: 'Onest Regular', sans-serif;
+    font-weight: 400;
+}
+.legal__link + .legal__link {
+    margin-top: 4px;
+}
+.right-legal__block {
+
+}
+
+.contacts__block {
+
+}
+
+.contacts__title {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: 'Onest Medium', sans-serif;
+    font-weight: 500;
+}
+
+.contacts__items {
+    margin-top: 8px;
+}
+
+.contact__link {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: 'Onest Regular', sans-serif;
+    font-weight: 400;
+}
+.contact__link + .contact__link {
+    margin-top: 4px;
+}
+.contact__link:last-child {
+    width: 250px;
+}
