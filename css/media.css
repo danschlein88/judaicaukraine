@@ -16,6 +16,9 @@
     .menu {
         display: none;
     }
+    .menu__box {
+        margin-right: 0px;
+    }
     .btn {
         display: flex !important;
         flex-direction: column;
