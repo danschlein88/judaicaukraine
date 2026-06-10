@@ -18,9 +18,9 @@ new Swiper('.swiper', {
     // scrollbar: {
     //     el: '.swiper-scrollbar',
     // },
-    speed:5000,
+    speed:800,
     autoplay: {
         delay:30,
-        disableOnInteraction:true,
+        disableOnInteraction:false,
     }
 });
