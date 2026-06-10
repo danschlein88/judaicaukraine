@@ -20,7 +20,7 @@ new Swiper('.swiper', {
     // },
     speed:800,
     autoplay: {
-        delay:30,
+        delay:300,
         disableOnInteraction:false,
     }
 });
