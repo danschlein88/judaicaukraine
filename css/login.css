@@ -1,0 +1,134 @@
+body {
+    background-color:#FFFFFF;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-image: url("/images/logo_bgr.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 100% 150%;
+}
+.welcome__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    background-color: #FFFFFF;
+    width: 520px;
+    height: 570px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 100px 20px rgba(0, 0, 0, 0.10);
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.logo__main {
+    height: 160px;
+    width: auto;
+}
+
+.form__block {
+
+}
+
+.input__block {
+
+}
+
+.input__label {
+
+}
+
+.input__inner {
+    width: 340px;
+    height: 40px;
+    border: 1px solid #CECECE;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 12px;
+    font-family: 'Onest Regular', sans-serif;
+    font-weight: 400;
+    color: #CECECE;
+}
+
+.input__block + .input__block {
+    margin-top: 16px;
+}
+
+.input__label {
+    color: #00264b;
+    font-size: 12px;
+    font-family: 'Onest Regular', sans-serif;
+    font-weight: 400;
+}
+
+
+.button-info__block {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    background-color: #00264b;
+    height: 32px;
+    width: 340px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Onest Regular', sans-serif;
+    font-weight: 400;
+}
+
+.login__info {
+    color: #BFBFBF;
+    font-size: 12px;
+    font-family: 'Onest Regular', sans-serif;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+.newacc__info {
+    color: #00264b;
+    font-size: 12px;
+    font-family: 'Onest Regular', sans-serif;
+    font-weight: 400;
+}
+.legal-info__block {
+    text-align: center;
+    width: 300px;
+    color: #00264b;
+    font-size: 12px;
+    font-family: 'Onest Regular', sans-serif;
+    font-weight: 400;
+}
+.politics__one {
+    color: #BFBFBF;
+    font-size: 12px;
+    font-family: 'Onest Regular', sans-serif;
+    font-weight: 400;
+}
+
+.politics__two {
+    color: #BFBFBF;
+    font-size: 12px;
+    font-family: 'Onest Regular', sans-serif;
+    font-weight: 400;
+}
