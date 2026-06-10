@@ -169,6 +169,9 @@ body.no-scroll {
 .account__overlay {
     display: none;
 }
+.acount__block {
+    display:none;
+}
 
 .best-offer {
 
