@@ -1,6 +1,9 @@
 @media(max-width:770px) {
 
-
+    .wrapper {
+        width: 100vw;
+        height: 100vh;
+    }
     .welcome__block {
         width: 100vw;
         height: 100vh;
