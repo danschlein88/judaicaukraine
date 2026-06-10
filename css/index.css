@@ -166,7 +166,8 @@ body.no-scroll {
     background-color: #00264B;
     border-radius: 200px;
 }
-.account__overlay {
+.account__overlay,
+.account__block {
     display: none;
 }
 
