@@ -185,3 +185,9 @@
         margin-top: 30px;
     }
 }
+
+@media(max-width:470px) {
+    .user-list {
+        width: 80px;
+    }
+}
